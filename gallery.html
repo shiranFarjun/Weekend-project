@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>floral designer-shiran farjun </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #first {
+            background-size: 100%;
+            height: 100vh;
+            position: relative;
+            text-align:center;
+        }
+
+        #second {
+            height: 100vh;
+            background-size: 100%
+        }
+
+        .topnav {
+            overflow: hidden;
+            border:none;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #c6b689;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #c6b689;
+        }
+
+        .topnav a.active {
+            color: white;
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-right: 30px;
+            margin-top: 25px;
+            font-size: 17px;
+            border: none;
+        }
+/* 
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: green;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        } */
+
+        /* .topnav .search-container button:hover {
+            background: green;
+        } */
+/* 
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+
+            .topnav a,
+            .topnav input[type=text],
+            .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        } */
+
+        .navmiddle img{
+            height: 30%;
+            width:20%;
+        }
+
+
+        /* midllllllllllllllllle */
+
+        #midllepage{
+            border-top: 2px solid #c6b689;
+            border-bottom: 2px solid #c6b689;
+
+        }
+        #midllepage div{
+            margin-top:10%;
+        }
+        #midllepage ul {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            list-style: none;
+        }
+
+        #midllepage ul li {
+            display: inline-block;
+            color: #9e8f65;
+            padding: 1rem;
+            position: relative;
+        }
+
+        #midllepage ul li a {
+            color: #c6b689;
+            text-decoration: none;
+        }
+
+        /* Hide neasted ul by defult */
+
+        #midllepage ul li ul {
+            display: none;
+        }
+
+        #midllepage ul li:hover {
+            cursor: pointer;
+            border-top: 3px solid #98a28b;
+            color: #98a28b;
+        }
+
+        #midllepage ul li:hover a {
+            color: #98a28b
+        }
+
+        /* Nested dropdwon show */
+        #midllepage ul li:hover ul {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 200%;
+            margin-top: 1rem;
+        }
+
+        #midllepage ul li:hover ul li {
+            display: block;
+            background: #e7e7e7;
+        }
+
+        #midllepage ul li:hover ul li a {
+            color: #333;
+        }
+
+        #midllepage ul li:hover ul li:hover {
+            background: #e0e0e0;
+            color: inherit
+        }
+
+
+                        /***** gallery ******/
+        #gallery img{
+            width:200px;
+            height:200px;
+            padding:3%;
+            border:3px solid #cfbc86;
+            transition: 0.5s all ease-out;
+        }
+        #gallery img:hover{
+            transform: scale(1.5); 
+        }
+
+        #gallery tr {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin:5%;
+        }
+        #gallery tr td{
+            display: flex;
+            flex-wrap: wrap;
+            margin:5%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="first">
+        <header class="header">
+            <nav id="navbar">
+                <div class="topnav">
+                    <a class="active" href="#"><img src="./img/icons8-twitter-48.png"></a>
+                    <a href="#"><img src="./img/icons8-facebook-50.png"></a>
+                    <a href="#"><img src="./img/icons8-instagram-48.png"></a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="navmiddle">
+                    <img src="./img/logoflowers (2).png" >
+                </div>
+            </nav>
+        </header>
+            <div id="midllepage">
+                <ul>
+                    <li><a href="./Home.html"><img src="./img/icons8-home-50.png"> </a></li>
+                    <li><a href="#">קורסים וסדנאות</a></li>
+                    <li><a href="#">המלצות </a></li>
+                    <li>בלוג<i class="fas fa-angle-down"></i>
+                        <ul>
+                            <li> הפקות עיצוב פרחים</li>
+                            <li> מאמרים ומידע</li>
+                            <li> הדרכות שזירה</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">כתבו עלינו </a></li>
+                    <li><a href="./Gallery.html">גלריות </a></li>
+                </ul>
+            </div>
+            <table id="gallery">
+                <tr>
+                    <td><img src="./img/bouquet.jpg" > </td>
+                    <td><img src="./img/bouquet2.jpg" > </td>
+                    <td><img src="./img/1.jpg" > </td>
+                    <td><img src="./img/2.jpg" > </td>
+                    <td><img src="./img/3.jpg" > </td>
+                    <td><img src="./img/4.jpg" > </td>
+                    <td><img src="./img/5.jpg" > </td>
+                   
+                </tr>
+            </table>>
+
+           
+       
+</body>
+
+</html>
+
+
+
+
+
+<!-- ///////// -->
